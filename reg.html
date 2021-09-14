@@ -1,0 +1,90 @@
+<html>
+<head>
+<script>
+function validateForm() {
+  var fname = document.forms["myForm"]["firstname"].value;
+ var lname = document.forms["myForm"]["lastname"].value;
+var email =document.forms["myForm"]["email"].value;
+var bday =document.forms["myForm"]["birthday"].value;
+var gender=document.forms["myForm"]["gender"].value;
+
+  if ((fname == "") ||(lname=="") || (email=="")||(bday=="")||(gender==""))
+{
+alert(" filled out the field ");
+    return false;
+  }
+else
+{
+alert("Thank you for your registration");
+
+}
+}
+</script>
+</head>
+<body style="font-family:Monotype Corsiva;background:pink;font-size:25px;">
+<form name="myForm" onsubmit="return validateForm()" method="post">
+  <center><h4 style=font-size:30px;background-color:antiquewhite;">REGISTRATION FORM</h4></center>
+<center><p><font color="red">* </font>Mandatory Fields</p>
+<table style="font-size:25px;">
+<tr>
+<td>
+            First Name: *
+</td>
+<td>
+<input type="text" name="firstname" value=" " />
+</td>
+</tr>
+<tr>
+<td>
+            Last Name: *
+</td>
+<td>
+<input type="text" name="lastname" value=" " />
+</td>
+</tr>
+<tr>
+<td>
+            Email: *
+</td>
+<td>
+<input type="email" name="email" value=" " />
+</td>
+</tr>
+<tr>
+<td>
+            Date of Birth: *
+</td>
+<td>
+<input type="date" name="birthday" />
+</td>
+</tr>
+
+<tr>
+<td>
+            Your Website:
+</td>
+<td>
+<input type="url" name="homepage" value=" " />
+</td>
+</tr>
+<tr>
+<td>
+            Gender: *
+</td>
+<td>
+<select name="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</center>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" name="reg" value="Register" style="height:40px;width:260px;font-size:18px;border-radius:2px;background:antiquewhite;font-family:cursive;">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

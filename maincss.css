@@ -1,0 +1,36 @@
+body
+{
+	font-family :"Audiowide", sans-serif;
+	background:#ffff66;
+	color:#ffffff;
+	background:#333333;
+}
+a
+{
+	color:white;
+	text-decoration :none;
+	margin:10px;
+	font-size:20px;
+}
+h3
+{
+	color:#ffb3be;
+}
+h2
+{
+	color:#ff99a8;
+}
+.external
+{
+	color:#303331;
+}
+
+.external1
+{
+	
+ background:#b3d1ff;
+
+}
+.external2{
+   background-color:antiquewhite;
+}
